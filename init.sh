@@ -24,7 +24,23 @@ sed_string="s/__name__/$name/g;\
     s/__name_l__/$name_lower/g;\
     s/__name_c__/$name_capital/g;"
 
-sed -i "$sed_string" ellipsis.sh XREADME.md Makefile mkdocs.yml test/_helper.bash bin/ellipsis-extension docs/*
+# Files needing replacements
+files=(
+    ellipsis.sh
+    XREADME.md
+    Makefile
+    mkdocs.yml
+    test/_helper.bash
+    bin/ellipsis-extension
+    docs/about.md
+    docs/index.md
+    docs/install.md)
+
+# Posix sed -i alternative
+for file in ${files[@]}; do
+    sed -e "$sed_string" "$file" > "$file.tmp" &&\
+        mv "$file.tmp" "$file"
+done
 
 ##############################################################################
 # File setup and cleanup
