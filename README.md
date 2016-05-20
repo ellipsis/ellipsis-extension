@@ -44,7 +44,7 @@ Ellipsis-Extension is open-source software licensed under the [MIT license][mit-
 
 [ellipsis]:     https://github.com/ellipsis/ellipsis
 
-[style-guide]:  https://google-styleguide.googlecode.com/svn/trunk/shell.xml
+[style-guide]:  https://google.github.io/styleguide/shell.xml
 [bats]:         https://github.com/sstephenson/bats
 [issues]:       http://github.com/ellipsis/ellipsis-extension/issues
 
