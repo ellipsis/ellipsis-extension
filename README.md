@@ -15,7 +15,7 @@ Getting started takes 4 steps:
 - Push to github
 - Activate Travis and ReadTheDocs for your extension
 
-*Currently only official extensions are support by the init script.*
+*Currently only official extensions are supported by the init script.*
 *Please contact us for more information!*
 
 ### Docs
